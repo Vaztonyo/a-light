@@ -1,51 +1,74 @@
+html {
+    height: 100%;
+    margin: auto;
+    background: url('https://images2.alphacoders.com/722/thumb-1920-72270.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .lightBox {
-    width : 7em;
-    margin : auto;
-    padding : 1em;
+    width: 7em;
+    margin: auto;
+    padding: 1em;
 }
 
-.lightStand {
+.pole {
     background-color: black;
-    width : 7em;
-    margin : auto;
-    padding : 1em;
+    margin-top: ;
+    width: 2em;
+    height: 12em;
+    margin: auto;
 }
 
-.light-background{
-    background-color: grey;
-    padding: 0.1em;
+.light-background {
+    border-color: white;
+    border-style: groove;
+    border-width: medium;
+    background-color: black;
     width: 6em;
-    height: 6em;
-    opacity: 0.5;
+    border-radius: 12%;
+    margin: auto;
+    padding: 0.25em;
 }
+
 .light {
-    width : 5em;
-    height: 5em;
+    width: 4em;
+    height: 3.5em;
     background-color: yellow;
     border-radius: 50%;
-    opacity: 0.25;
-    margin : 0.5em auto;
+    opacity: 0.55;
+    margin: 0.5em auto;
     z-index: 10000;
 }
 
 .off {
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
 .on {
-    opacity: 1;
+    opacity: 1.5;
 }
 
+
 /* light colors start */
+
 .green {
     background-color: green;
 }
+
 .red {
     background-color: red;
 }
+
 .orange {
     background-color: orange;
 }
-.number{
-  width: 15%;
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: crosshair;
 }
