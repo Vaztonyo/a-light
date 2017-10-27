@@ -2,8 +2,14 @@ html {
     height: 100%;
     margin: auto;
     background: url('https://images2.alphacoders.com/722/thumb-1920-72270.jpg');
-    background-size: cover;
+    background-size: 180%;
     background-repeat: no-repeat;
+}
+
+h1{
+  font-family: 'Monoton', cursive;
+  color: white;
+  font-size: 30px;
 }
 
 .lightBox {
@@ -16,7 +22,7 @@ html {
     background-color: black;
     margin-top: ;
     width: 2em;
-    height: 12em;
+    height: 11em;
     margin: auto;
 }
 
@@ -36,13 +42,13 @@ html {
     height: 3.5em;
     background-color: yellow;
     border-radius: 50%;
-    opacity: 0.55;
+    opacity: 0.25;
     margin: 0.5em auto;
     z-index: 10000;
 }
 
 .off {
-    opacity: 0.35;
+    opacity: 0.15;
 }
 
 .on {

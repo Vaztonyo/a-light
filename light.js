@@ -51,17 +51,61 @@ var redLight = new Light('redLight', 'red');
 
 
 var onBtn = document.querySelector('.onBtn');
-var offBtn = document.querySelector('.offBtn');
+// var offBtn = document.querySelector('.offBtn');
 var blinkBtn = document.querySelector('.blinkBtn');
 
 
 var numberOfClicks = 0;
 
+function go(){
+  greenLight.on();
+}
+
+function stop(){
+  redLight.on();
+}
+
+function caution(){
+  orangeLight.on();
+}
+
+function goOff(){
+  greenLight.off();
+}
+
+function stopoff(){
+  redLight.off();
+}
+
+function cautionOff(){
+  orangeLight.off();
+}
 
 onBtn.addEventListener('click', function() {
-    greenLight.on();
-    orangeLight.on();
-    redLight.on();
+var counter = 0;
+  setInterval(function(){
+  counter++;
+  if (counter >= 10 && counter <16){
+    go();
+    stopoff();
+    cautionOff();
+  }
+  else if (counter < 10 && counter > 5){
+    caution();
+    goOff();
+    stopoff();
+  }
+  else if(counter < 5){
+    goOff();
+    stop();
+    cautionOff();
+  }
+  if (counter === 16){
+    goOff();
+    stopoff();
+    cautionOff();
+  }
+}, 800);
 });
 
 blinkBtn.addEventListener('click', function() {
@@ -74,8 +118,8 @@ blinkBtn.addEventListener('click', function() {
 });
 
 
-offBtn.addEventListener('click', function() {
-    greenLight.off();
-    orangeLight.off();
-    redLight.off()
-});
+// offBtn.addEventListener('click', function() {
+//   goOff();
+//   stopoff();
+//   cautionOff();
+// });
