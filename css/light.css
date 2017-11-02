@@ -1,14 +1,17 @@
 html {
     height: 100%;
     margin: auto;
-    background: url('https://orig00.deviantart.net/8018/f/2008/206/1/3/tribal_smoke_9_by_spherephoenix1990.jpg');
+    /*background: url('http://hdbackgroundspic.com/wp-content/uploads/2016/11/background-nature-hd-sky-1229x768.jpg');*/
+    background-color: dodgerblue;
     background-size: cover;
     background-repeat: no-repeat;
+    border-width: thick;
+    border-style: double;
 }
 
 h1{
-  font-family: 'Monoton', cursive;
-  color: white;
+  font-family: 'Kaushan Script', cursive;
+  /*color: white;*/
   font-size: 30px;
 }
 
@@ -71,8 +74,8 @@ h1{
 }
 
 .btn {
-    background-color: dodgerblue;
-    color: white;
+    background-color: silver;
+    /*color: black;*/
     border-radius: 10px;
     padding: 15px;
     text-align: center;

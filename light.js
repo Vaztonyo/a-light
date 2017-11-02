@@ -18,19 +18,19 @@ var Light = function(id, color) {
             greenLight.on();
             setTimeout(function() {
                 greenLight.off();
-            }, 300);
+            }, 100);
 
             orangeLight.on();
             setTimeout(function() {
                 orangeLight.off();
-            }, 300);
+            }, 100);
 
             redLight.on();
             setTimeout(function() {
                 redLight.off();
-            }, 300);
+            }, 100);
 
-        }, 500);
+        }, 300);
 
     };
 
@@ -85,7 +85,7 @@ onBtn.addEventListener('click', function() {
 var counter = 0;
   setInterval(function(){
   counter++;
-  if (counter >= 10 && counter <16){
+  if (counter < 5){
     go();
     stopoff();
     cautionOff();
@@ -95,7 +95,7 @@ var counter = 0;
     goOff();
     stopoff();
   }
-  else if(counter < 5){
+  else if(counter >= 10 && counter <16){
     goOff();
     stop();
     cautionOff();
